@@ -7,10 +7,10 @@ RUN apt-get install -y curl
 RUN apt-get install -y unzip
 RUN apt-get clean
 RUN apt-get remove
-ADD https://bintray.com/artifact/download/jfrog/artifactory/artifactory-3.8.0.zip /tmp/artifactory.zip
+ADD https://bintray.com/artifact/download/jfrog/artifactory/artifactory-3.3.1.zip /tmp/artifactory.zip
 RUN unzip /tmp/artifactory.zip -d /
 RUN rm -rf /tmp/artifactory.zip
-RUN mv /artifactory-3.8.0 /artifactory
+RUN mv /artifactory-3.3.1 /artifactory
 
 VOLUME /artifactory/data
 VOLUME /artifactory/logs
