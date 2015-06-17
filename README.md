@@ -1,6 +1,14 @@
-docker-artifactory
+Docker Artifactory
 ==================
 
-A docker artifactory able to mount data volume
+Usage: **docker run -d judoole/artifactory:latest**
 
-Usage: **docker run -v /host-artifactory-data-folder:/data judoole/artifactory**
+Or versioned: **docker run -d judoole/artifactory:3.8.0**
+
+Volumes abled to mount:
+
+artifactory/data
+
+artifactory/logs
+
+artifactory/backup
